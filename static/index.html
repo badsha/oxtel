@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Assistant Pricing & Savings Guide | VirtualWorker</title>
+    <meta name="description" content="Discover how much you can save by hiring a virtual assistant. Calculate your potential savings and find the perfect plan for your business needs.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>VirtualWorker</h1>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#calculator" class="nav-link">Calculator</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#contact" class="nav-link btn-primary">Get Started</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Virtual Assistant<br>
+                    <span class="text-primary">Pricing & Savings Guide</span>
+                </h1>
+                <p class="hero-description">
+                    Discover how much you can save by hiring a virtual assistant. Calculate your potential savings and find the perfect plan for your business needs.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#calculator" class="btn btn-primary">
+                        Calculate Savings
+                    </a>
+                    <a href="#pricing" class="btn btn-secondary">
+                        View Pricing Plans
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Savings Calculator -->
+    <section id="calculator" class="calculator-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Savings Calculator</h2>
+                <p>See how much you could save by hiring a virtual assistant instead of a local employee</p>
+            </div>
+            
+            <div class="calculator-container">
+                <div class="calculator-inputs">
+                    <h3>Your Current Costs</h3>
+                    
+                    <div class="input-group">
+                        <label for="localSalary">Local Employee Salary (Annual)</label>
+                        <input type="number" id="localSalary" value="50000" placeholder="50,000">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="benefits">Additional Benefits & Costs (%)</label>
+                        <input type="number" id="benefits" value="30" placeholder="30">
+                        <small>Include health insurance, payroll taxes, office space, equipment, etc.</small>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="hoursPerWeek">Hours Needed Per Week</label>
+                        <input type="number" id="hoursPerWeek" value="40" placeholder="40">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="vaRate">Virtual Assistant Rate (Per Hour)</label>
+                        <input type="number" id="vaRate" value="15" placeholder="15">
+                    </div>
+                </div>
+                
+                <div class="calculator-results">
+                    <h3>Your Potential Savings</h3>
+                    
+                    <div class="result-row">
+                        <span>Local Employee Total Cost</span>
+                        <span id="localTotal">$65,000</span>
+                    </div>
+                    
+                    <div class="result-row">
+                        <span>Virtual Assistant Cost</span>
+                        <span id="vaTotal">$31,200</span>
+                    </div>
+                    
+                    <div class="result-highlight">
+                        <span>Annual Savings</span>
+                        <span id="annualSavings">$33,800</span>
+                    </div>
+                    
+                    <div class="savings-percent">
+                        That's a <span id="savingsPercent">52%</span> cost reduction!
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary full-width">Get Your Custom Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Tiers -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Plan</h2>
+                <p>Flexible pricing options to match your business needs and budget</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Starter</h3>
+                        <p>Perfect for small businesses</p>
+                        <div class="price">
+                            <span class="amount">$12</span>
+                            <span class="period">/hour</span>
+                        </div>
+                        <p class="minimum">Minimum 10 hours/week</p>
+                    </div>
+                    <div class="card-content">
+                        <ul class="features">
+                            <li>Administrative tasks</li>
+                            <li>Email management</li>
+                            <li>Calendar scheduling</li>
+                            <li>Basic research</li>
+                            <li>Standard support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="card-header">
+                        <h3>Professional</h3>
+                        <p>Ideal for growing businesses</p>
+                        <div class="price">
+                            <span class="amount">$15</span>
+                            <span class="period">/hour</span>
+                        </div>
+                        <p class="minimum">Minimum 20 hours/week</p>
+                    </div>
+                    <div class="card-content">
+                        <ul class="features">
+                            <li>Everything in Starter</li>
+                            <li>Social media management</li>
+                            <li>Content creation</li>
+                            <li>Customer support</li>
+                            <li>Priority support</li>
+                            <li>Monthly reporting</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Enterprise</h3>
+                        <p>For large organizations</p>
+                        <div class="price">
+                            <span class="amount">$18</span>
+                            <span class="period">/hour</span>
+                        </div>
+                        <p class="minimum">Minimum 40 hours/week</p>
+                    </div>
+                    <div class="card-content">
+                        <ul class="features">
+                            <li>Everything in Professional</li>
+                            <li>Dedicated account manager</li>
+                            <li>Custom workflows</li>
+                            <li>Advanced analytics</li>
+                            <li>24/7 priority support</li>
+                            <li>SLA guarantee</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Feature Comparison</h2>
+                <p>Compare what's included in each plan to find the perfect fit for your business</p>
+            </div>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Starter</th>
+                            <th class="popular-col">Professional</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Administrative Tasks</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Email & Calendar Management</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Research & Data Entry</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Social Media Management</td>
+                            <td class="cross">✗</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Content Creation</td>
+                            <td class="cross">✗</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Customer Support</td>
+                            <td class="cross">✗</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Dedicated Account Manager</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Custom Workflows</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>24/7 Priority Support</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                            <td class="check">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>See how virtual assistants have transformed businesses like yours</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Hiring a virtual assistant through VirtualWorker saved us over $40,000 annually while getting even better support than our previous in-house employee."</p>
+                    <div class="author">
+                        <div class="avatar">SJ</div>
+                        <div class="info">
+                            <h4>Sarah Johnson</h4>
+                            <span>CEO, TechStart Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The quality of work is exceptional and the cost savings allowed us to invest more in growth. Our VA feels like a true team member."</p>
+                    <div class="author">
+                        <div class="avatar">MC</div>
+                        <div class="info">
+                            <h4>Michael Chen</h4>
+                            <span>Founder, Digital Marketing Pro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"We went from spending $65K annually on administrative help to just $25K with better results. The ROI is incredible."</p>
+                    <div class="author">
+                        <div class="avatar">ER</div>
+                        <div class="info">
+                            <h4>Emily Rodriguez</h4>
+                            <span>Operations Manager, GrowthCorp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Get answers to common questions about our virtual assistant services</p>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>How much can I really save with a virtual assistant?</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most businesses save 40-60% compared to hiring a local employee when you factor in salary, benefits, office space, equipment, and other overhead costs. Our calculator above gives you a personalized estimate based on your specific situation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>What qualifications do your virtual assistants have?</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All our virtual assistants have university degrees and undergo rigorous screening including skills testing, background checks, and interviews. They have an average of 5+ years of professional experience and are trained in the latest business tools and software.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Can I scale my hours up or down as needed?</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Our flexible plans allow you to adjust hours with just 1 week notice. You can scale up during busy periods and reduce hours during slower times, giving you the flexibility that traditional employees can't provide.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>What time zones do your virtual assistants work in?</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We have virtual assistants available across multiple time zones to match your business hours. Whether you need coverage during EST, PST, or even 24/7 support, we can accommodate your schedule requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>How quickly can I get started?</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most clients are matched with their ideal virtual assistant within 48-72 hours. We'll schedule a consultation call, understand your needs, and introduce you to pre-screened candidates who match your requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ready to Get Started?</h2>
+                <p>Get your free consultation and custom savings estimate</p>
+            </div>
+            
+            <div class="contact-form-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="companyName">Company Name</label>
+                        <input type="text" id="companyName" name="companyName">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tasks">What type of tasks do you need help with?</label>
+                        <textarea id="tasks" name="tasks" rows="4" placeholder="Describe the tasks and projects you'd like assistance with..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="expectedHours">Expected Hours Per Week</label>
+                        <select id="expectedHours" name="expectedHours">
+                            <option value="">Select expected hours</option>
+                            <option value="10-20 hours">10-20 hours</option>
+                            <option value="20-30 hours">20-30 hours</option>
+                            <option value="30-40 hours">30-40 hours</option>
+                            <option value="40+ hours">40+ hours</option>
+                            <option value="Not sure yet">Not sure yet</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary full-width">
+                        Get Your Free Consultation
+                    </button>
+                    <p class="form-note">We'll respond within 24 hours with your custom savings estimate</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VirtualWorker</h3>
+                    <p>Connect with top virtual assistants and transform your business efficiency.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Administrative Support</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Social Media Management</a></li>
+                        <li><a href="#">Content Creation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 VirtualWorker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
